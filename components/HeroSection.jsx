@@ -48,6 +48,8 @@ export default function HeroSection() {
         <span className="text-[#64FFDA]">PostgreSQL</span>, entre otras.
       </motion.p>
 
+      {
+        /* 
       <motion.a
         href="#proyectos"
         whileHover={{ scale: 1.05 }}
@@ -57,6 +59,9 @@ export default function HeroSection() {
       >
         Ver mis proyectos
       </motion.a>
+
+      */
+      }
     </section>
   );
 }
