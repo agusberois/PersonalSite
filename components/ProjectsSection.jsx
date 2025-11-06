@@ -7,27 +7,10 @@ const projects = [
   {
     title: "Nutritrackers",
     description: "Aplicación web para nutricionistas que permite gestionar clientes, planes y trackeos de progreso.",
-    image: "/projects/nutritrackers.png", // luego cambiás por tus imágenes reales
+    image: "/nutritrackers.png", // luego cambiás por tus imágenes reales
     technologies: ["React", "Node.js", "PostgreSQL"],
-    demoLink: "#",
-    codeLink: "#",
-  },
-  {
-    title: "Tu Casaca MVD",
-    description: "E-commerce de camisetas deportivas personalizadas con pedidos por encargo y diseño adaptable.",
-    image: "/projects/tucasacamvd.png",
-    technologies: ["Next.js", "Tailwind", "Stripe"],
-    demoLink: "#",
-    codeLink: "#",
-  },
-  {
-    title: "Fitness Hub",
-    description: "Plataforma de musculación con rutinas, consejos y control de progreso personalizado.",
-    image: "/projects/fitnesshub.png",
-    technologies: ["React", "Express", "MongoDB"],
-    demoLink: "#",
-    codeLink: "#",
-  },
+    demoLink: "https://nutritrackers.com",
+  }
 ];
 
 export default function Projects() {
@@ -71,15 +54,7 @@ export default function Projects() {
                   rel="noopener noreferrer"
                   className="flex items-center gap-1 text-sm bg-blue-500 hover:bg-blue-600 px-3 py-2 rounded-lg transition"
                 >
-                  <ExternalLink size={16} /> Demo
-                </a>
-                <a
-                  href={project.codeLink}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-1 text-sm bg-gray-700 hover:bg-gray-800 px-3 py-2 rounded-lg transition"
-                >
-                  <Github size={16} /> Código
+                  <ExternalLink size={16} /> Ir
                 </a>
               </div>
             </div>

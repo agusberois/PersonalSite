@@ -8,7 +8,7 @@ export default function Navbar() {
   const links = [
     { href: "#inicio", label: "Inicio" },
     { href: "#sobre-mi", label: "Sobre mí" },
-    //{ href: "#proyectos", label: "Proyectos" },
+    { href: "#proyectos", label: "Proyectos" },
     { href: "#experiencia", label: "Experiencia" },
   ];
 
