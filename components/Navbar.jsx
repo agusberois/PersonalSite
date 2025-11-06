@@ -90,7 +90,8 @@ export default function Navbar() {
       ))}
 
       <a
-        href="#contacto"
+        href="https://tally.so/r/dWqYMK"
+        target="_blank"
         className="mt-2 inline-block text-center px-5 py-2 rounded-lg font-semibold border-2 border-electric text-electric hover:bg-electric hover:text-navy transition-all duration-300 shadow-[0_0_10px_rgba(100,255,218,0.3)]"
         onClick={() => setOpen(false)}
       >
