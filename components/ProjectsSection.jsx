@@ -7,9 +7,16 @@ const projects = [
   {
     title: "Nutritrackers",
     description: "Aplicación web para nutricionistas que permite gestionar clientes, planes y trackeos de progreso.",
-    image: "/nutritrackers.png", // luego cambiás por tus imágenes reales
-    technologies: ["React", "Node.js", "PostgreSQL"],
+    image: "/nutritrackers.png",
+    technologies: ["ReactJS", "NodeJS", "PostgreSQL"],
     demoLink: "https://nutritrackers.com",
+  },
+  {
+    title: "Gimnasio Oxigenarte",
+    description: "Pagina web para Gimnasio Oxigenarte. (En desarrollo)",
+    image: "/oxigenarte.jpg", 
+    technologies: ["ReactJS"],
+    demoLink: "https://agusberois.dev",
   }
 ];
 
