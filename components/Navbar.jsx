@@ -1,5 +1,4 @@
 "use client";
-
 import { useState } from "react";
 
 export default function Navbar() {
@@ -17,8 +16,12 @@ export default function Navbar() {
       <div className="bg-navy/95 backdrop-blur-sm border-b border-electric/10">
         <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
           {/* Brand */}
-          <a href="#inicio" className="text-electric text-lg font-bold">
-            Agustín Berois
+          <a href="#inicio" className="flex items-center gap-2 group">
+            <img
+              src="/logo.png"
+              alt="Logo Agus Berois"
+              className="h-10 w-auto md:h-12 transition-transform duration-300 group-hover:scale-105 drop-shadow-[0_0_10px_rgba(100,255,218,0.3)]"
+            />
           </a>
 
           {/* Desktop nav */}
