@@ -23,9 +23,9 @@ export default function Contact() {
             <h2>Contacto</h2>
             <p>¿Quieres que trabajemos juntos? ¡Hablemos!</p>
             <form className='contact-form' onSubmit={handleSubmit}>
-                <input type="text" placeholder='Nombre' value={form.name} onChange={handleChange} />
-                <input type="email" placeholder='Email' value={form.email} onChange={handleChange} />
-                <textarea name="" id="" cols="30" rows="10" placeholder='Mensaje' value={form.message} onChange={handleChange}></textarea>
+                <input type="text" placeholder='Nombre' value={form.name} onChange={handleChange} name='name' />
+                <input type="email" placeholder='Email' value={form.email} onChange={handleChange} name='email' />
+                <textarea name="" id="" cols="30" rows="10" placeholder='Mensaje' value={form.message} onChange={handleChange} name='message'></textarea>
                 <button type='submit'>Enviar</button>
             </form>
         </div>
