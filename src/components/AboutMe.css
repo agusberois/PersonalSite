@@ -1,0 +1,58 @@
+.aboutMe {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    padding: 4rem 0;
+}
+
+/* TEXTO */
+.about-text {
+    flex: 1;
+    max-width: 600px;
+}
+
+.about-text h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.about-text p {
+    margin-bottom: 1.2rem;
+    line-height: 1.7;
+    color: #ccd6f6;
+}
+
+/* IMAGEN */
+.about-image {
+    flex-shrink: 0;
+}
+
+.about-image img {
+    width: 280px;
+    border-radius: 10px;
+    object-fit: cover;
+    filter: grayscale(30%);
+    transition: all 0.3s ease;
+}
+
+.about-image img:hover {
+    filter: grayscale(0%);
+    transform: translateY(-4px);
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 768px) {
+    .aboutMe {
+        flex-direction: column-reverse;
+        text-align: left;
+        gap: 2rem;
+    }
+
+    .about-image img {
+        width: 220px;
+    }
+
+    .about-text h2 {
+        font-size: 1.8rem;
+    }
+}

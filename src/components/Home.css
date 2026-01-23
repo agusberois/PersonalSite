@@ -1,0 +1,52 @@
+.home {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 1.5rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Intro */
+.intro {
+    font-size: 0.95rem;
+    letter-spacing: 1px;
+    margin-bottom: 0.5rem;
+}
+
+/* Nombre */
+.title {
+    font-size: clamp(2.5rem, 6vw, 4rem);
+    font-weight: 700;
+    color: #e5e7eb;
+    margin-bottom: 0.3rem;
+}
+
+/* Rol */
+.subtitle {
+    font-size: clamp(1.4rem, 4vw, 2rem);
+    color: #8892b0;
+    margin-bottom: 1.5rem;
+}
+
+/* Descripción */
+.description {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: #ccd6f6;
+    max-width: 600px;
+}
+
+
+/* ===== MOBILE ===== */
+@media (max-width: 768px) {
+    .home {
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .description {
+        font-size: 0.95rem;
+    }
+}
