@@ -73,7 +73,7 @@ export default function Contact() {
     return (
         <div id="contact" className="contact">
             <h2>Contacto</h2>
-            <p>¿Quieres que trabajemos juntos? ¡Hablemos!</p>
+            <p>¿Querés que trabajemos juntos? ¡Hablemos!</p>
 
             <form ref={formRef} className="contact-form" onSubmit={handleSubmit}>
                 <input

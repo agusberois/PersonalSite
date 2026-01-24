@@ -6,10 +6,10 @@ export default function Footer() {
         <footer className='footer'>
             <div className="footer-content">
                 <div className="footer-social">
-                    <a href="#"><FaLinkedin /></a>
-                    <a href="#"><FaInstagram /></a>
-                    <a href="#"><FaGithub /></a>
-                    <a href="#"><FaWhatsapp /></a>
+                    <a href="https://www.linkedin.com/in/agustin-rodriguez-berois/" target="_blank"><FaLinkedin /></a>
+                    <a href="https://www.instagram.com/agusberoisdev/" target="_blank"><FaInstagram /></a>
+                    <a href="https://github.com/agusberois" target="_blank"><FaGithub /></a>
+                    <a href="https://wa.me/59891920278" target="_blank"><FaWhatsapp /></a>
                 </div>
                 <div className="footer-info">
                     <p>Agustin Berois - Todos los derechos reservados © {new Date().getFullYear()}</p>
