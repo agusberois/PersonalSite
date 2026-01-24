@@ -32,6 +32,19 @@ export default function Contact() {
         e.preventDefault()
         setLoading(true)
 
+
+        if (!captchaOk) {
+            alert('Por favor, verifica el captcha')
+            setLoading(false)
+            return
+        }
+
+        if (!form.name || !form.email || !form.message || !form.phone) {
+            alert('Por favor, completa todos los campos')
+            setLoading(false)
+            return
+        }
+
         emailjs
             .sendForm(
                 import.meta.env.VITE_EMAILJS_SERVICE_ID,
@@ -86,6 +99,7 @@ export default function Contact() {
                     name="phone"
                     placeholder="Teléfono"
                     value={form.phone}
+                    required
                     onChange={handleChange}
                 />
 
