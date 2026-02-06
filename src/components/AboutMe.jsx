@@ -1,5 +1,5 @@
 import React from 'react'
-import ProfileImage from '../assets/profile.webp'
+import ProfileImage from '../assets/logo.png'
 import './AboutMe.css'
 
 export default function AboutMe() {
