@@ -32,7 +32,7 @@ export default function Projects() {
             name: 'Gimnasio Oxigenarte',
             description: 'Landing page para Gimnasio Oxigenarte, con un diseño moderno y atractivo.',
             image: 'https://oxigenarte.vercel.app/assets/logo-2EmJ37y_.jpg',
-            link: 'https://oxigenarte.vercel.app',
+            link: 'https://oxigenarte.uy',
             tags: ["ReactJS"]
         }
 
