@@ -80,7 +80,7 @@ export default function Projects() {
                                 <div className="img-wrapper">
                                     <img
                                         src={project.image}
-                                        alt={`Imagen del proyecto ${project.name}`}
+                                        alt={`Proyecto de diseño y desarrollo web: ${project.name}`}
                                         loading="lazy"
                                     />
                                 </div>

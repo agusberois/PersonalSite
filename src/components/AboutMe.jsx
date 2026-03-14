@@ -18,9 +18,9 @@ export default function AboutMe() {
             >
                 <div className="about-text">
                     <p>
-                        Hola! Soy <span className="green">Agustín Berois</span>, un desarrollador
-                        <span className="green"> FullStack</span> apasionado por crear soluciones
-                        tecnológicas eficientes, escalables y visualmente atractivas. Mi interés 
+                        Hola! Soy <span className="green">Agustín Berois</span>, un programador y desarrollador
+                        <span className="green"> Full Stack</span> apasionado por crear soluciones
+                        tecnológicas eficientes, escalables y orientadas al diseño web. Mi interés 
                         en el desarrollo web comenzó cuando decidí construir mi primera página 
                         para un proyecto personal.
                     </p>
@@ -36,7 +36,7 @@ export default function AboutMe() {
 
                 <div className="about-image-wrapper">
                     <div className="about-image">
-                        <img src={ProfileImage} alt="Foto de perfil de Agus Berois" />
+                        <img src={ProfileImage} alt="Agustin Berois - Desarrollador y Programador Web Full Stack Freelance" />
                     </div>
                 </div>
             </div>

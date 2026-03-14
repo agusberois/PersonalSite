@@ -42,7 +42,7 @@
     font-size: 0.95rem;
     color: var(--text-main);
     font-family: var(--font-sans);
-    resize: vertical;
+    resize: none;
     transition: border-color 0.3s ease, box-shadow 0.3s ease;
     width: 100%;
 }
@@ -68,7 +68,7 @@
     display: flex;
     justify-content: center;
     margin-top: 10px;
-    overflow-x: auto;
+    overflow: hidden;
 }
 
 /* BUTTON */
@@ -132,7 +132,7 @@
     }
 
     /* Captcha scale-down en pantallas muy pequeñas */
-    .captcha-container > div {
+    .captcha-container>div {
         transform: scale(0.88);
         transform-origin: center top;
     }
