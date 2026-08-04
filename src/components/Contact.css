@@ -42,7 +42,7 @@
     font-size: 0.95rem;
     color: var(--text-main);
     font-family: var(--font-sans);
-    resize: none;
+    resize: vertical;
     transition: border-color 0.3s ease, box-shadow 0.3s ease;
     width: 100%;
 }
@@ -68,7 +68,7 @@
     display: flex;
     justify-content: center;
     margin-top: 10px;
-    overflow: hidden;
+    overflow-x: auto;
 }
 
 /* BUTTON */
@@ -99,6 +99,34 @@
     opacity: 0.5;
     border-color: var(--text-secondary);
     color: var(--text-secondary);
+}
+
+/* FORM STATUS */
+.form-status {
+    margin-top: 0.5rem;
+    padding: 0.85rem 1rem;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    line-height: 1.4;
+    border: 1px solid transparent;
+}
+
+.form-status--success {
+    color: var(--accent);
+    background-color: var(--accent-transparent);
+    border-color: var(--accent);
+}
+
+.form-status--error {
+    color: #ff6b6b;
+    background-color: rgba(255, 107, 107, 0.1);
+    border-color: #ff6b6b;
+}
+
+.form-status--validation {
+    color: #ffd166;
+    background-color: rgba(255, 209, 102, 0.1);
+    border-color: #ffd166;
 }
 
 /* ===== MOBILE ===== */
@@ -132,7 +160,7 @@
     }
 
     /* Captcha scale-down en pantallas muy pequeñas */
-    .captcha-container>div {
+    .captcha-container > div {
         transform: scale(0.88);
         transform-origin: center top;
     }

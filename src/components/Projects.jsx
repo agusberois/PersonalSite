@@ -8,40 +8,32 @@ export default function Projects() {
 
     const PROJECTS = [
         {
-            name: "MIONE S.A.",
-            description: "Landing page corporativa para Mione S.A., empresa líder en alimentos para mascotas. Desarrollada en conjunto con Agencia Bruta, cuenta con un diseño a medida.",
-            image: "https://pub-4b1bdad496cd4d34be9a3c584d3de654.r2.dev/logo.webp",
-            link: "https://mione.com.uy",
-            tags: ["React", "Firebase"]
-        },
-        {
-            name: 'Fithub',
-            description: "Plataforma integral SaaS de gestión de socios para gimnasios y centros deportivos. Permite el control completo de socios, tanto asistencias, membresías, pagos y más.",
-            image: "https://www.agusberois.dev/assets/logo-CMomad0j.png",
-            link: "https://fithub.uy",
-            tags: ["React", "Node.js", "PostgreSQL", "Firebase"]
-        },
-        {
             name: 'Pieza Clave',
             description: "Plataforma de herramientas psicoeducativas enfocada en el bienestar mental. Incluye recursos interactivos y un diseño accesible para todos los usuarios.",
-            image: "https://www.piezaclave.uy/assets/logo-g79K7WoZ.jpg",
+            image: "https://www.piezaclave.uy/logo-color.png",
             link: "https://piezaclave.uy",
-            tags: ["React", "Firebase"]
+            tags: ["NextJS", "PostgreSQL"]
         },
         {
-            name: 'Gimnasio Oxigenarte',
-            description: 'Landing page para Gimnasio Oxigenarte, con un diseño moderno y atractivo.',
-            image: 'https://oxigenarte.vercel.app/assets/logo-2EmJ37y_.jpg',
-            link: 'https://oxigenarte.uy',
-            tags: ["ReactJS"]
+            name: 'Olague & Paez',
+            description: "Landing page para Olague & Paez, estudio contable y jurídico. Diseño profesional pensado para transmitir confianza y facilitar el contacto con potenciales clientes.",
+            image: "https://pub-fedd89d0558f4b9d91e3aa50b1c1eef2.r2.dev/logo-12.png",
+            link: "https://olaguepaez.com",
+            tags: ["React"]
+        },
+        {
+            name: 'MG Limpieza',
+            description: "Landing page para MG Limpieza, servicio de limpieza en Montevideo, Uruguay. Diseño simple y directo para facilitar el contacto y la contratación del servicio.",
+            image: "https://www.mglimpieza.uy/logo.png",
+            link: "https://mglimpieza.uy",
+            tags: ["React"]
         }
-
     ]
 
     return (
         <section className="projects" id="projects">
             <h2 className="section-title">
-                <span className="green">02.</span> Algunos Proyectos
+                <span className="green">03.</span> Algunos Proyectos
             </h2>
 
             <div
@@ -80,7 +72,7 @@ export default function Projects() {
                                 <div className="img-wrapper">
                                     <img
                                         src={project.image}
-                                        alt={`Proyecto de diseño y desarrollo web: ${project.name}`}
+                                        alt={`Imagen del proyecto ${project.name}`}
                                         loading="lazy"
                                     />
                                 </div>

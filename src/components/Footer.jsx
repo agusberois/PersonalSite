@@ -12,6 +12,7 @@ export default function Footer() {
                     <a href="https://wa.me/59891920278" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><FaWhatsapp /></a>
                 </div>
                 <div className="footer-info">
+                    <p>Desarrollador web freelance en Uruguay</p>
                     <a href="https://github.com/agusberois/PersonalSite" target="_blank" rel="noopener noreferrer">
                         <p>Diseñado y desarrollado por Agustín Berois</p>
                     </a>

@@ -17,6 +17,7 @@ export default function Contact() {
 
     const [captchaOk, setCaptchaOk] = useState(false)
     const [loading, setLoading] = useState(false)
+    const [status, setStatus] = useState({ type: 'idle', message: '' })
 
     const handleChange = (e) => {
         setForm({
@@ -31,16 +32,17 @@ export default function Contact() {
 
     const handleSubmit = (e) => {
         e.preventDefault()
+        setStatus({ type: 'idle', message: '' })
         setLoading(true)
 
         if (!captchaOk) {
-            alert('Por favor, verifica el captcha')
+            setStatus({ type: 'validation', message: 'Por favor, verifica el captcha.' })
             setLoading(false)
             return
         }
 
         if (!form.name || !form.email || !form.message || !form.phone) {
-            alert('Por favor, completa todos los campos')
+            setStatus({ type: 'validation', message: 'Por favor, completa todos los campos.' })
             setLoading(false)
             return
         }
@@ -53,7 +55,7 @@ export default function Contact() {
                 import.meta.env.VITE_EMAILJS_PUBLIC_KEY
             )
             .then(() => {
-                alert('Mensaje enviado correctamente ✅')
+                setStatus({ type: 'success', message: 'Mensaje enviado correctamente. ¡Gracias por escribir!' })
                 setForm({
                     name: '',
                     email: '',
@@ -63,7 +65,7 @@ export default function Contact() {
             })
             .catch((error) => {
                 console.error('Error al enviar:', error)
-                alert('Hubo un error al enviar el mensaje ❌')
+                setStatus({ type: 'error', message: 'Hubo un error al enviar el mensaje. Intenta nuevamente.' })
             })
             .finally(() => {
                 setLoading(false)
@@ -73,7 +75,7 @@ export default function Contact() {
     return (
         <section id="contact" className="contact">
             <h2 className="section-title">
-                <span className="green">04.</span> ¿Qué sigue?
+                <span className="green">05.</span> ¿Qué sigue?
             </h2>
 
             <div
@@ -124,7 +126,7 @@ export default function Contact() {
 
                     <div className="captcha-container">
                         <ReCAPTCHA
-                            sitekey={import.meta.env.VITE_RECAPTCHA_SITE_KEY}
+                            sitekey={import.meta.env.VITE_RECAPTCHA_SITE_KEY || ' '}
                             onChange={handleCaptchaChange}
                             theme="dark"
                         />
@@ -133,6 +135,12 @@ export default function Contact() {
                     <button type="submit" className="submit-btn" disabled={loading || !captchaOk}>
                         {loading ? 'Enviando...' : !captchaOk ? 'Verificar Captcha' : 'Enviar Mensaje'}
                     </button>
+
+                    {status.type !== 'idle' && (
+                        <p className={`form-status form-status--${status.type}`} role="status">
+                            {status.message}
+                        </p>
+                    )}
                 </form>
             </div>
         </section>

@@ -51,6 +51,10 @@
     color: var(--accent);
 }
 
+.nav ul li a.active {
+    color: var(--accent);
+}
+
 /* contacto estilo botón */
 .contacto a {
     border: 1px solid var(--accent);
