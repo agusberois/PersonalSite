@@ -15,6 +15,13 @@ export default function Projects() {
             tags: ["NextJS", "PostgreSQL"]
         },
         {
+            name: 'Localito.uy',
+            description: "SaaS multi-tenant para catalógos webs, con panel de control incluído, base de datos y proceso automátizados.",
+            image: "https://www.localito.uy/logo.svg",
+            link: "https://localito.uy",
+            tags: ["NextJS",'Supabase','Postgre','Redis']
+        },
+        {
             name: 'Olague & Paez',
             description: "Landing page para Olague & Paez, estudio contable y jurídico. Diseño profesional pensado para transmitir confianza y facilitar el contacto con potenciales clientes.",
             image: "https://pub-fedd89d0558f4b9d91e3aa50b1c1eef2.r2.dev/logo-12.png",
