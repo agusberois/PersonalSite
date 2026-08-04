@@ -4,6 +4,14 @@
     margin: 0 auto;
 }
 
+.experience-intro {
+    color: var(--text-secondary);
+    font-size: 1.05rem;
+    line-height: 1.6;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
 /* GRID */
 .experience-grid {
     display: grid;

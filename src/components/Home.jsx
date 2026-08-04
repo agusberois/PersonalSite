@@ -14,12 +14,13 @@ export default function Home() {
                 <p className="green intro">Hola, mi nombre es</p>
 
                 <h1 className="title">Agus Berois.</h1>
-                <h2 className="subtitle">Desarrollo software para la web.</h2>
+                <h2 className="subtitle">Desarrollador Web Freelance en Uruguay.</h2>
 
                 <p className="description">
                     Soy un desarrollador <span className="green">FullStack</span> especializado en
-                    construir experiencias digitales excepcionales. Actualmente, estoy enfocado
-                    en desarrollar productos accesibles y centrados en el usuario.
+                    construir experiencias digitales excepcionales. Trabajo como freelance con
+                    empresas y emprendimientos de Uruguay y la región, enfocado en desarrollar
+                    productos accesibles y centrados en el usuario.
                 </p>
 
                 <div className="home-actions">

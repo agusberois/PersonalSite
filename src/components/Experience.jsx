@@ -24,10 +24,15 @@ export default function Experience() {
     return (
         <section id="experience" className="experience">
             <h2 className="section-title">
-                <span className="green">03.</span> Herramientas & Tecnologías
+                <span className="green">04.</span> Herramientas & Tecnologías
             </h2>
 
-            <div 
+            <p className="experience-intro">
+                Como desarrollador web freelance, trabajo con este stack para construir
+                productos robustos de punta a punta: desde la interfaz hasta la base de datos.
+            </p>
+
+            <div
                 ref={ref}
                 className={`experience-grid reveal ${isVisible ? 'active' : ''}`}
             >

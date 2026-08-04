@@ -101,6 +101,34 @@
     color: var(--text-secondary);
 }
 
+/* FORM STATUS */
+.form-status {
+    margin-top: 0.5rem;
+    padding: 0.85rem 1rem;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    line-height: 1.4;
+    border: 1px solid transparent;
+}
+
+.form-status--success {
+    color: var(--accent);
+    background-color: var(--accent-transparent);
+    border-color: var(--accent);
+}
+
+.form-status--error {
+    color: #ff6b6b;
+    background-color: rgba(255, 107, 107, 0.1);
+    border-color: #ff6b6b;
+}
+
+.form-status--validation {
+    color: #ffd166;
+    background-color: rgba(255, 209, 102, 0.1);
+    border-color: #ffd166;
+}
+
 /* ===== MOBILE ===== */
 @media (max-width: 768px) {
     .contact {

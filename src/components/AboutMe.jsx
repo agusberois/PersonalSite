@@ -1,5 +1,5 @@
 import React from 'react'
-import ProfileImage from '../assets/logo.png'
+import ProfileImage from '../assets/profile.webp'
 import useReveal from '../hooks/useReveal'
 import './AboutMe.css'
 
@@ -27,10 +27,16 @@ export default function AboutMe() {
 
                     <p>
                         Hoy en día, me especializo en el desarrollo de aplicaciones web modernas de principio a fin.
-                        He tenido el privilegio de construir software robusto usando tecnologías como 
-                        <span className="green"> React, Next.js y Node.js</span>, y arquitecturas de bases de 
-                        datos tanto relacionales (<span className="green"> PostgreSQL</span>) como 
+                        He tenido el privilegio de construir software robusto usando tecnologías como
+                        <span className="green"> React, Next.js y Node.js</span>, y arquitecturas de bases de
+                        datos tanto relacionales (<span className="green"> PostgreSQL</span>) como
                         no relacionales (<span className="green"> MongoDB</span>).
+                    </p>
+
+                    <p>
+                        Trabajo como <span className="green">desarrollador web freelance</span>, colaborando de
+                        forma remota con clientes de Uruguay y el resto de Latinoamérica en proyectos que van
+                        desde landing pages hasta plataformas web a medida.
                     </p>
                 </div>
 
